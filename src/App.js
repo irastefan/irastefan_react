@@ -1,10 +1,13 @@
 import React from 'react';
-import './styles/App.css';
+import './styles/css/main.css';
+import logo from './images/logo.jpg';
 
 function App() {
   return (
     <div className="App">
-      Hello world!
+      <div className='sidebar'>
+        <img src={logo} className='logo' />
+      </div>
     </div>
   );
 }

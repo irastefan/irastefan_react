@@ -1,0 +1,318 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+:root {
+    --circlecolor1: #78b0a0;
+    --circlecolor2: #efdab9;
+    --buttoncolor: 96, 183, 140;
+}
+body {
+	padding: 0;
+	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.app {
+	display: flex;
+    align-items: self-end;
+}
+.app .sidebar {
+	width: 50%;
+    height: 100vh;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #584b4f;
+    color: #efeae1;
+}
+
+.app .sidebar {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body ::-webkit-scrollbar {
+    width: 4px;
+}
+ /* Track */
+body ::-webkit-scrollbar-track {
+    background: #efdab9; 
+}
+   
+  /* Handle */
+  body ::-webkit-scrollbar-thumb {
+    background: #78b0a0; 
+  }
+  
+  /* Handle on hover */
+  body ::-webkit-scrollbar-thumb:hover {
+    background: #78b0a0; 
+  }
+
+.app .sidebar > h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.picture-resume {
+    position: relative;
+    width: 130px;
+    height: 180px;
+}
+.picture-resume .circle-1, .picture-resume .circle-2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 144.4px;
+  height: 144.4px;
+  top: 2.46rem;
+  left: -0.3rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--circlecolor1) var(--circlecolor1) var(--circlecolor1) transparent;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+
+.circle-1 {
+  animation: circle-1 2s;
+}
+
+@keyframes circle-1 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.picture-resume .circle-2 {
+  width: 155.8px;
+  height: 155.8px;
+  top: 2.1rem;
+  left: -0.62rem;
+  border-color: var(--circlecolor2) transparent var(--circlecolor2) var(--circlecolor2);
+  animation: circle 2s;
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.picture-resume img {
+    display: block;
+    border-radius: 50%;
+    background: #F5E8DF;
+    position: absolute;
+    top: 2.8rem;
+    left: 0;
+    min-width: 133px;
+    min-height: 133px;
+    width: 130px;
+}
+
+.picture-resume:hover {
+  cursor: pointer;
+}
+
+.picture-resume:hover .circle-1, .picture-resume:hover .circle-2 {
+  transform: rotate(360deg);
+}
+
+.picture-resume:hover .circle-2 {
+  transform: rotate(-360deg);
+}
+
+
+.link-default{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    margin: 37px 0px 0 0 ;
+}
+.link-default span{
+    height: 53px;
+    width: 53px;    
+    background: none;
+    border: 0px solid var(--circlecolor1);
+    border-radius: 100%;
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+.link-default:hover span{
+    animation: button_pulse 1.5s infinite cubic-bezier(.25, 0, 0, 1);
+    background: var(--circlecolor1);
+}
+
+@-webkit-keyframes button_pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(var(--buttoncolor), 1);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
+    }
+}
+@keyframes button_pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(var(--buttoncolor), 1);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
+    }
+}
+
+
+main {
+    position: relative;    
+    background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    padding: 0% 10%;
+
+    color: #efdab9;
+    font-weight: 300;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.ellipse {
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    max-width: 500px;
+    z-index: 1;
+    opacity: 0.1;
+    animation: ellipse-animate 2s linear infinite;
+}
+
+@-webkit-keyframes ellipse-animate {
+    0% {transform: rotate(40deg)}
+    100% {transform: rotate(350deg)}
+}
+
+@keyframes ellipse-animate {
+    0% {transform: rotate(40deg)}
+    100% {transform: rotate(350deg)}
+}
+
+main > div {
+    z-index: 10;
+    position: relative;
+}
+main > div > .item {
+    display: flex;
+    margin: 0 0 10px -40px;
+    transition: 0.4s;
+    padding: 20px 40px;
+    border-radius: 7px;
+}
+main > div > .item:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+main > div > .item > div:first-child {
+    width: 40%;
+    padding-right: 20px;
+}
+main > div > .item > div:first-child h3 {    
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 0 10px;    
+    color: #efeae1;
+}
+main > div > .item > div:first-child h4 {    
+    font-weight: 300;
+    font-size: 16px;
+    color: #efeae1;
+}
+main > div > .item > div:last-child h3 {
+    color: #78b0a0;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+main > h2 {
+    font-size: 45px;
+}
+
+.floats {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.float {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 50%;
+    background: rgba(120, 176, 160, 0.5);
+    color: #fff;
+    z-index: 0;
+    transition: 0.2s;
+}
+.float:hover {
+    z-index: 1;
+    background: rgba(120, 176, 160, 0.8);
+    cursor: pointer;
+}
+.float1 {    
+    background: rgba(255, 209, 82, 0.3);
+}
+.float1:hover {    
+    background: rgba(255, 209, 82, 0.7);
+}
+.float2 {    
+    background: rgba(97, 148, 188, 0.5);
+}
+.float2:hover {    
+    background: rgba(97, 148, 188, 0.8);
+}
+.float3 {    
+    background: rgba(141, 60, 43, 0.3);
+}
+.float3:hover {    
+    background: rgba(141, 60, 43, 0.7);
+}
+.float > .float {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 820px) {
+    .app {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        height: max-content;
+    }
+    .app main, .app .sidebar {
+        width: 100%;
+        height: max-content;
+        padding: 20px;
+    }
+    main > div > .item {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #efdab9;
+    }    
+    main > div > .item:last-child {
+        border: none;
+    }
+
+    .float {
+        position: initial;
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 7px;
+    }
+    .float .float {
+        width: auto;
+    }
+  }

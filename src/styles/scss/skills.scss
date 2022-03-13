@@ -1,0 +1,71 @@
+@mixin skillStyle ($top, $left, $width: auto, $height: auto, $fontSize: 15px) {
+    font-size: $fontSize;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+}
+
+.skill1 {
+    @include skillStyle(-90px, 450px, auto, auto, 22px);
+}
+.skill2 {
+    @include skillStyle(330px, 190px, 150px, 140px);
+}
+.skill3 {
+    @include skillStyle(10px, 50px, auto, auto, 23px);
+}
+.skill4 {
+    @include skillStyle(90px, 10px, auto, auto, 16px);
+}
+.skill5 {
+    @include skillStyle(100px, 90px);
+}
+.skill6 {
+    @include skillStyle(40px, 550px, 150px, 150px);
+}
+.skill7 {
+    @include skillStyle(10px, 30px, auto, auto, 23px);
+}
+.skill8 {
+    @include skillStyle(90px, 10px, auto, auto, 20px);
+}
+.skill9 {
+    @include skillStyle(120px, 90px);
+}
+.skill10 {
+    @include skillStyle(0px, 310px, auto, auto, 22px);
+}
+.skill11 {
+    @include skillStyle(390px, 0px, auto, auto, 22px);
+}
+.skill12 {
+    @include skillStyle(150px, 390px, auto, auto, 22px);
+}
+.skill13 {
+    @include skillStyle(10px, -50px, 250px, 250px);
+}
+.skill14 {
+    @include skillStyle(10px, 70px, auto, auto, 23px);
+}
+.skill15 {
+    @include skillStyle(110px, 20px);
+}
+.skill16 {
+    @include skillStyle(210px, 80px);
+}
+.skill17 {
+    @include skillStyle(140px, 190px);
+}
+.skill18 {
+    @include skillStyle(300px, 470px, 150px, 130px);
+}
+.skill19 {
+    @include skillStyle(10px, 30px, auto, auto, 23px);
+}
+.skill20 {
+    @include skillStyle(90px, 10px);
+}
+.skill21{
+    @include skillStyle(70px, 120px);
+}

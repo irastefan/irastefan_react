@@ -1,0 +1,39 @@
+[
+  {
+    "fullName": "אירה ממלין",
+	"phone": "0511122333",
+	"email": "t@t.com",
+	"experience": {
+    	  "title": "ניסיון תעסוקתי",
+    	  "items": [
+    	  {
+    	    "company": "Site Pro",
+    		"years": "2020-2022",
+    		"position": "Wordpress Developer",
+    		"description": "פיתוח אתרים ב-WordPress (אתר תדמית, אתר חנות וירטואלית Woocommerce).פיתוח תוספים לוורדפרס.כתיבת שירותים (PHP, CSS, HTML, JavaScript, Jquery) (API Google)."
+    	  },
+    	  {
+    	    "company": "מרפאה אורתופדית Global medic",
+    		"years": "2020-2018",
+    		"position": "מנהלת אתר אינטרנט",
+    		"description": "מנהלת אתר אינטרנט (CMS - Evolution CMS, Wordpress).פיתוח וקידום אתרים.כתיבת שירותים (API Powerlink CRM) (PHP, CSS, HTML)."
+    	  }
+    	]
+	},
+	"education": {
+	    "title": "השכלה",
+    	"items": [
+    	  {
+    	    "company": "באוניברסיטה הממלכתית לאינפורמטיקה ורדיואלקטרוניקה - מינסק",
+    		"years": "2010-2014",
+    		"position": "תואר ראשון במערכות מידע"
+    	  },
+    	  {
+    	    "company": "לימודים במגמת מחשבים בקולג' הסוציאלי ,באוניברסיטת מוגילב",
+    		"years": "2006-2010",
+    		"position": ""
+    	  }
+    	]
+	}
+  }
+]

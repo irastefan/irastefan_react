@@ -1,0 +1,59 @@
+[
+  {
+    "fullName": "Ira Mamlin",
+	"phone": "0532498427",
+	"email": "mamlin.ira@gmail.com",
+	"experience": {
+    	  "title": "Work Experience",
+    	  "items": [
+    	  {
+    	    "company": "Site Pro",
+    		"years": "2020-2022",
+    		"position": "Wordpress Developer",
+    		"description": "Website development. WordPress plugin development. Web Services development (PHP, CSS, HTML, JavaScript, Jquery) (API Google)"
+    	  },
+    	  {
+    	    "company": "Global medic orthopedic clinic",
+    		"years": "2018-2019",
+    		"position": "Webmaster (CMS - Evolution CMS, Wordpress)",
+    		"description": "Website development and promotion. Web Services development (API Powerlink CRM) (PHP, CSS, HTML)"
+    	  },
+    	  {
+    	    "company": "Alinter ltd",
+    		"years": "2011-2017",
+    		"position": "SEO specialist/website developer",
+    		"description": "Promotion and development of websites, development of web services (PHP) and page making in html / css. Advertising campaigns in search engines"
+    	  },
+    	  {
+    	    "company": "Webcom Media",
+    		"years": "2010-2011",
+    		"position": "SEO specialist ",
+    		"description": "Promotion of websites and conducting advertising campaigns in search engines (google / yandex). Worked with a large number of projects of varying complexity"
+    	  }
+    	]
+	},
+	"education": {
+	    "title": "Education",
+    	"items": [
+    	  {
+    	    "company": "Belarusian State University of Informatics and  Radioelectronics",
+    		"years": "2010-2014",
+    		"position": "Software engineer"
+    	  },
+    	  {
+    	    "company": "Social and Humanitarian College",
+    		"years": "2006-2010",
+    		"position": "Technician programmer"
+    	  }
+    	]
+	},
+	"skills": {
+	    "title": "Skills",
+	    "items": [
+	      {
+	          
+	      }     
+	   ]
+	}
+  }
+]

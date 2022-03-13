@@ -1,0 +1,59 @@
+[
+  {
+    "fullName": "אירה ממלין",
+	"phone": "0532498427",
+	"email": "mamlin.ira@gmail.com",
+	"experience": {
+    	  "title": "ניסיון תעסוקתי",
+    	  "items": [
+    	  {
+    	    "company": "Site Pro",
+    		"years": "2020-2022",
+    		"position": "מפתח אתרי וורדפרס",
+    		"description": "פיתוח אתרים ב-WordPress (אתר תדמית, אתר חנות וירטואלית Woocommerce). פיתוח תוספים לוורדפרס .כתיבת שירותים (PHP, CSS, HTML, JavaScript, Jquery) (API Google)."
+    	  },
+    	  {
+    	    "company": "מרפאה אורתופדית Global medic",
+    		"years": "2018-2019",
+    		"position": "מנהלת אתר אינטרנט",
+    		"description": "מנהלת אתר אינטרנט (CMS - Evolution CMS, Wordpress). פיתוח וקידום אתרים.כתיבת שירותים (API Powerlink CRM) (PHP, CSS, HTML)."
+    	  },
+    	  {
+    	    "company": "Alinter ltd",
+    		"years": "2011-2017",
+    		"position": "SEO specialist / Website developer",
+    		"description": "קידום אתרים במנועי חיפוש ורשתות חברתיות. שימוש ב Google Tag Manager ,Google Analytics, Google Api, Google.Ads. פיתוח אתרי אינטרנט : פיתוח צד קליינט (JavaScript, HTML,CSS) .כתיבת שירותים בצד שרת (Apache, MySQL, PHP)"
+    	  },
+    	  {
+    	    "company": "Webcom Media",
+    		"years": "2010-2011",
+    		"position": "SEO specialist",
+    		"description": "קידום אתרים , מעורבות במספר פרויקטים שונים לפרסום וקידום אתרים. ניהול פרסום במנועי חיפוש (Google , Yandex)"
+    	  }
+    	]
+	},
+	"education": {
+	    "title": "השכלה",
+    	"items": [
+    	  {
+    	    "company": "באוניברסיטה הממלכתית לאינפורמטיקה ורדיואלקטרוניקה - מינסק",
+    		"years": "2010-2014",
+    		"position": "תואר ראשון במערכות מידע"
+    	  },
+    	  {
+    	    "company": "לימודים במגמת מחשבים בקולג' הסוציאלי ,באוניברסיטת מוגילב",
+    		"years": "2006-2010",
+    		"position": ""
+    	  }
+    	]
+	},
+	"skills": {
+	    "title": "כישורים",
+	    "items": [
+	      {
+	          
+	      }     
+	   ]
+	}
+  }
+]

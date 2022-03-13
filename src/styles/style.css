@@ -262,6 +262,9 @@ main > div > .item {
     border-radius: 7px;
     font-size: 18px;
 }
+#he main > div > .item {
+    margin: 0 -40px 10px 0;
+}
 main > div > .item:hover {
     background: rgba(255, 255, 255, 0.02);
 }

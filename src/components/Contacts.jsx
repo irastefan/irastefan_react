@@ -5,7 +5,7 @@ import { faMobileScreenButton, faEnvelope } from '@fortawesome/free-solid-svg-ic
 const Contacts = (props) => {
     return (
         <div className="contacts">
-            <a href={props.phone} className="link-default">
+            <a href="tel:0532498427" className="link-default">
                 <span>
                     <FontAwesomeIcon icon={faMobileScreenButton} />
                 </span> {props.phone} 

@@ -18,13 +18,13 @@ function App() {
     en: {
       class: 'en',
       cv: '',
-      json: 'https://jahnavadd.github.io/json1.json',
+      json: 'https://irastefan.com/json/en.json',
       textButton: 'HE'
     },
     he: {
       class: 'he',
       cv: '',
-      json: 'https://jahnavadd.github.io/json1.json', 
+      json: 'https://irastefan.com/json/he.json', 
       textButton: 'EN'
     }
   }

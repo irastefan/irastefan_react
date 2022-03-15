@@ -10,6 +10,7 @@ import Contacts from './components/Contacts';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import Project from './components/Projects';
 import Loader from './components/Loader/Loader';
 
 function App() {
@@ -50,6 +51,11 @@ function App() {
         data[0].education.items.forEach(edu_item => {
           edu.push(edu_item);
         });
+
+        let pr = [];	
+        data[0].projects.items.forEach(pr_item => {
+          pr.push(pr_item);
+        });
         
         setData({
           fullName: data[0].fullName, 
@@ -59,7 +65,9 @@ function App() {
           experience: exp, 
           edutitle: data[0].education.title,
           education: edu,
-          skillsTitle: data[0].skills.title
+          skillsTitle: data[0].skills.title, 
+          prtitle: data[0].projects.title,
+          projects: pr
         });
       
       } 
@@ -117,6 +125,18 @@ function App() {
 
         <h2>{dataJson.skillsTitle}</h2>
         <Skills />
+
+        <h2>Projects</h2>
+        <div className='projects'>
+            {dataJson.projects.map((item, index) => 
+              <Project 
+                name={item.name}  
+                link={item.link}
+                img={item.img}
+                key={index}
+              /> )}
+        </div>
+
       </main>
       </CSSTransition>
     </div>

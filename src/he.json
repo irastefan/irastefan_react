@@ -54,6 +54,51 @@
 	          
 	      }     
 	   ]
+	},
+	"projects": {
+		"title": "פרויקטים",
+		"items": [
+			{
+				"name": "Moga.co.il",
+				"link": "https://moga.co.il/",
+				"img": "https://irastefan.com/projects-img/moga.jpg"
+			},
+			{
+				"name": "Moga PDF Catalog",
+				"link": "https://moga.co.il/catalog/",
+				"img": "https://irastefan.com/projects-img/mogacatalog.jpg"
+			},
+			{
+				"name": "Razco.co.il",
+				"link": "https://razco.co.il",
+				"img": "https://irastefan.com/projects-img/Razco-home-scaled.jpg"
+			},
+			{
+				"name": "Davidgerstein.com",
+				"link": "https://davidgerstein.com/",
+				"img": "https://irastefan.com/projects-img/Gerstein.jpg"
+			},
+			{
+				"name": "Kavnavon.co.il",
+				"link": "https://www.kavnavon.co.il/",
+				"img": "https://irastefan.com/projects-img/kavnavon.jpg"
+			},
+			{
+				"name": "Chefman.co.il",
+				"link": "https://chefman.co.il/",
+				"img": "https://irastefan.com/projects-img/chefman-home.jpg"
+			},
+			{
+				"name": "Hakotel.co.il",
+				"link": "https://hakotel.co.il/",
+				"img": "https://irastefan.com/projects-img/hakotel.jpg"
+			},
+			{
+				"name": "Metroltd.co.il",
+				"link": "https://metroltd.co.il/",
+				"img": "https://irastefan.com/projects-img/metro-home.jpg"
+			}
+		]
 	}
   }
 ]

@@ -19,13 +19,13 @@ function App() {
     en: {
       class: 'en',
       cv: '',
-      json: 'https://irastefan.com/json/en.json',
+      json: 'https://irastefan.com/json/eng.json',
       textButton: 'HE'
     },
     he: {
       class: 'he',
       cv: '',
-      json: 'https://irastefan.com/json/he.json', 
+      json: 'https://irastefan.com/json/heb.json', 
       textButton: 'EN'
     }
   }
@@ -126,7 +126,7 @@ function App() {
         <h2>{dataJson.skillsTitle}</h2>
         <Skills />
 
-        <h2>Projects</h2>
+        <h2>{dataJson.prtitle}</h2>
         <div className='projects'>
             {dataJson.projects.map((item, index) => 
               <Project 

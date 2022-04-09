@@ -267,6 +267,8 @@ main > div > .item {
 }
 main > div > .item:hover {
     background: rgba(255, 255, 255, 0.02);
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 main > div > .item > div:first-child {
     width: 40%;
@@ -346,6 +348,10 @@ main > h2 {
 }
 .float > .float {
     padding: 30px;
+    transition: 0.5s;
+}
+.float:hover {
+    transform: scale(1.06);
 }
 
 .projects {

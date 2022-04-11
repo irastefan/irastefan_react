@@ -60,7 +60,9 @@ function App() {
         setData({
           fullName: data[0].fullName, 
           email: data[0].email, 
-          phone: data[0].phone, 
+          phone: data[0].phone,  
+          github: data[0].github,  
+          linkedin: data[0].linkedin, 
           exptitle: data[0].experience.title,
           experience: exp, 
           edutitle: data[0].education.title,
@@ -86,7 +88,7 @@ function App() {
 
         <Picture src={logo} />
 		    <h1>{dataJson.fullName}</h1>
-        <Contacts phone={dataJson.phone} email={dataJson.email} />
+        <Contacts phone={dataJson.phone} email={dataJson.email} github={dataJson.github} linkedin={dataJson.linkedin} />
 
 	    </div>
      </CSSTransition>

@@ -12,6 +12,8 @@ const Skills = () => {
             <div className="skill6 float">
 				<div className="skill7 float float2">JavaScript</div>
 				<div className="skill8 float float1">React</div>
+				<div className="skill8_1 float float3">TypeScript</div>
+				<div className="skill8_2 float float">Redux</div>
 				<div className="skill9 float float3">Jquery</div>
 			</div>
 			<div className="skill10 float float3">PHP</div>
@@ -20,6 +22,7 @@ const Skills = () => {
 			<div className="skill13 float float2">
 				<div className="skill14 float">Wordpress</div>
 				<div className="skill15 float">Woocommerce</div>
+				<div className="skill15_1 float float2">WPML</div>
 				<div className="skill16 float float3">Elementor</div>
 				<div className="skill17 float float1">ACF</div>
 			</div>

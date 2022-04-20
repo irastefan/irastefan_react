@@ -134,7 +134,9 @@ function App() {
               <Project 
                 name={item.name}  
                 link={item.link}
-                img={item.img}
+                img={item.img} 
+                tags={item.tags} 
+                github={item.github} 
                 key={index}
               /> )}
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Project = (props) => {
     return (
@@ -8,7 +9,18 @@ const Project = (props) => {
               <div className='img-project'>
                 <img src={props.img} alt={props.name} />
               </div>
-              <a className='link-project' href={props.link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLink} /></a>
+              <div className="project-links">
+                <a className='link-project' 
+                  href={props.link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLink} /></a>
+                <a className='link-project tooltip' 
+                  href='#'><FontAwesomeIcon icon={faCode} />
+                  <span className="tags tooltiptext">{
+                      props.tags && props.tags.join(', ')
+                    }</span>
+                </a>
+                {props.github && <a className='link-project' 
+                  href={props.github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>}
+              </div>
           </div>
     )
 }

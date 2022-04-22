@@ -30,10 +30,12 @@ function App() {
     }
   }
   const [langState, setLang] = useState({state: lang.en});
+  const [langId, setLangId] = useState('en');
 
   const [dataJson, setData] = useState({experience: null});
   
   useEffect(() => {
+    setData({experience: null})
 
     let request = new XMLHttpRequest();
     request.open('GET', langState.state.json, true);
@@ -58,7 +60,7 @@ function App() {
           pr.push(pr_item);
         });
         
-        setData({experience: null})
+        
         setTimeout(() => {
           setData({
             fullName: data[0].fullName, 
@@ -74,7 +76,7 @@ function App() {
             prtitle: data[0].projects.title,
             projects: pr
           });
-        }, 1000)
+        }, 1200)
         
       
       } 
@@ -83,13 +85,14 @@ function App() {
 
     request.send();
     setInProp(true);
+    setLangId(langState.state.class)
  
   }, [langState.state])
 
    if (dataJson.experience !== null) 
    return (
      
-    <div className="app" id={langState.state.class}>
+    <div className="app" id={langId}>
      <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
       <div className="sidebar">
 
@@ -102,9 +105,12 @@ function App() {
      <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
       <main>
       <button className="langbutton" onClick={() => {
-          if (langState.state.class === 'en') setLang({state: lang.he})
-            else setLang({state: lang.en})
-            setInProp(false);
+          if (langState.state.class === 'en') 
+            setLang({state: lang.he})
+          else setLang({state: lang.en})
+          setInProp(false);
+
+          
         }} >{langState.state.textButton}</button>
 
         <img src={ellipse} alt="Logo" className="ellipse" />

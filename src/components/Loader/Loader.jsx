@@ -3,8 +3,8 @@ import cl from "./Loader.module.css"
 
 const Loader = () => {
     return (
-        <div className={cl.loader}>
-            <div className={cl.load}></div>
+        <div className={cl.loaderMain}>
+            <div className={cl.loader}></div>
         </div>
     )
 }

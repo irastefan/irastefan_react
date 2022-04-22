@@ -32,8 +32,9 @@ function App() {
   const [langState, setLang] = useState({state: lang.en});
 
   const [dataJson, setData] = useState({experience: null});
+  
   useEffect(() => {
-    
+
     let request = new XMLHttpRequest();
     request.open('GET', langState.state.json, true);
     request.onload = function () {
@@ -57,33 +58,39 @@ function App() {
           pr.push(pr_item);
         });
         
-        setData({
-          fullName: data[0].fullName, 
-          email: data[0].email, 
-          phone: data[0].phone,  
-          github: data[0].github,  
-          linkedin: data[0].linkedin, 
-          exptitle: data[0].experience.title,
-          experience: exp, 
-          edutitle: data[0].education.title,
-          education: edu,
-          skillsTitle: data[0].skills.title, 
-          prtitle: data[0].projects.title,
-          projects: pr
-        });
+        setData({experience: null})
+        setTimeout(() => {
+          setData({
+            fullName: data[0].fullName, 
+            email: data[0].email, 
+            phone: data[0].phone,  
+            github: data[0].github,  
+            linkedin: data[0].linkedin, 
+            exptitle: data[0].experience.title,
+            experience: exp, 
+            edutitle: data[0].education.title,
+            education: edu,
+            skillsTitle: data[0].skills.title, 
+            prtitle: data[0].projects.title,
+            projects: pr
+          });
+        }, 1000)
+        
       
       } 
+      
     }
 
     request.send();
     setInProp(true);
+ 
   }, [langState.state])
 
    if (dataJson.experience !== null) 
    return (
      
     <div className="app" id={langState.state.class}>
-     <CSSTransition in={inProp} timeout={400} classNames="my-node"> 
+     <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
       <div className="sidebar">
 
         <Picture src={logo} />

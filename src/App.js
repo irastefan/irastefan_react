@@ -12,18 +12,27 @@ import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Project from './components/Projects';
+import Loader from './components/Loader/Loader';
 
 function App() {
   const [inProp, setInProp] = useState(false);
 
   const [langId, setLangId] = useState('en');
+
+  const [loader, setLoader] = useState(true);
   
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000);
+  }, []);
+
   useEffect(() => {
     setInProp(true); 
   }, [langId]);
 
-   return (
-     
+  if (!loader) {
+   return (    
     <div className="app" id={langId}>
      <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
       <div className="sidebar">
@@ -91,10 +100,12 @@ function App() {
       </main>
       </CSSTransition>
     </div>
+   
   );
-  /*return (
+}
+  else return (
     <Loader />
-  )*/
+  )
 }
 
 export default App;

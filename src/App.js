@@ -12,113 +12,46 @@ import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Project from './components/Projects';
-import Loader from './components/Loader/Loader';
 
 function App() {
-  console.log(LANG);
   const [inProp, setInProp] = useState(false);
-  const lang = {
-    en: {
-      class: 'en',
-      cv: '',
-      json: 'https://irastefan.com/json/eng.json',
-      textButton: 'HE'
-    },
-    he: {
-      class: 'he',
-      cv: '',
-      json: 'https://irastefan.com/json/heb.json', 
-      textButton: 'EN'
-    }
-  }
-  const [langState, setLang] = useState({state: lang.en});
-  const [langId, setLangId] = useState('en');
 
-  const [dataJson, setData] = useState({experience: null});
+  const [langId, setLangId] = useState('en');
   
   useEffect(() => {
-    setData({experience: null});
+    setInProp(true); 
+  }, [langId]);
 
-    let request = new XMLHttpRequest();
-    request.open('GET', langState.state.json, true);
-    request.onload = function () {
-
-      let data = JSON.parse(this.response);
-
-      if (request.status >= 200 && request.status < 400) {
-              
-        let exp = [];	
-        data[0].experience.items.forEach(exp_item => {
-          exp.push(exp_item);
-        });
-            
-        let edu = [];	
-        data[0].education.items.forEach(edu_item => {
-          edu.push(edu_item);
-        });
-
-        let pr = [];	
-        data[0].projects.items.forEach(pr_item => {
-          pr.push(pr_item);
-        });
-        
-        
-        setTimeout(() => {
-          setData({
-            fullName: data[0].fullName, 
-            email: data[0].email, 
-            phone: data[0].phone,  
-            github: data[0].github,  
-            linkedin: data[0].linkedin, 
-            exptitle: data[0].experience.title,
-            experience: exp, 
-            edutitle: data[0].education.title,
-            education: edu,
-            skillsTitle: data[0].skills.title, 
-            prtitle: data[0].projects.title,
-            projects: pr
-          });
-        }, 1200)
-        
-      
-      } 
-      
-    }
-
-    request.send();
-    setInProp(true);
-    setLangId(langState.state.class);
- 
-  }, [langState.state]);
-
-   if (dataJson.experience !== null) return (
+   return (
      
     <div className="app" id={langId}>
      <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
       <div className="sidebar">
 
         <Picture src={logo} />
-		    <h1>{dataJson.fullName}</h1>
-        <Contacts phone={dataJson.phone} email={dataJson.email} github={dataJson.github} linkedin={dataJson.linkedin} />
+		    <h1>{LANG[langId].fullName}</h1>
+        <Contacts 
+          phone={LANG.phone} 
+          email={LANG.email} 
+          github={LANG.github} 
+          linkedin={LANG.linkedin} 
+        />
 
 	    </div>
      </CSSTransition>
      <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
       <main>
       <button className="langbutton" onClick={() => {
-          if (langState.state.class === 'en') 
-            setLang({state: lang.he})
-          else setLang({state: lang.en})
+          langId === 'en' ? setLangId('he') : setLangId('en');
           setInProp(false);
-
           
-        }} >{langState.state.textButton}</button>
+        }} >{LANG[langId].textButton}</button>
 
         <img src={ellipse} alt="Logo" className="ellipse" />
 
-        <h2>{dataJson.exptitle}</h2>
+        <h2>{LANG[langId].experience.title}</h2>
         <div>
-        {dataJson.experience.map((item, index) => 
+        {LANG[langId].experience.items.map((item, index) => 
           <WorkExperience 
             company={item.company}  
             years={item.years}
@@ -128,9 +61,9 @@ function App() {
           /> )}
           </div>
           
-          <h2>{dataJson.edutitle}</h2>
+          <h2>{LANG[langId].education.title}</h2>
           <div>
-            {dataJson.education.map((item, index) => 
+            {LANG[langId].education.items.map((item, index) => 
               <Education 
                 company={item.company}  
                 years={item.years}
@@ -139,12 +72,12 @@ function App() {
               /> )}
           </div>
 
-        <h2>{dataJson.skillsTitle}</h2>
+        <h2>{LANG.title}</h2>
         <Skills />
 
-        <h2>{dataJson.prtitle}</h2>
+        <h2>{LANG.title}</h2>
         <div className='projects'>
-            {dataJson.projects.map((item, index) => 
+            {LANG.projects.items.map((item, index) => 
               <Project 
                 name={item.name}  
                 link={item.link}
@@ -159,9 +92,9 @@ function App() {
       </CSSTransition>
     </div>
   );
-  else return (
+  /*return (
     <Loader />
-  )
+  )*/
 }
 
 export default App;

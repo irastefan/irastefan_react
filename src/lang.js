@@ -4,7 +4,7 @@ const LANG = {
     "github": "https://github.com/irastefan",
     "linkedin": "https://www.linkedin.com/in/ira-mamlin-8436a215b/",
     "en": {
-        "textButton": "English",
+        "textButton": "Hebrew",
         "fullName": "Ira Stefan",
         "experience": {
             "title": "Work Experience",
@@ -52,8 +52,8 @@ const LANG = {
       },
     },
     "he": {
-        "textButton": "Hebrew",
-        "fullname": "אירה סטפן",
+        "textButton": "English",
+        "fullName": "אירה סטפן",
         "experience": {
             "title": "ניסיון תעסוקתי",
             "items": [

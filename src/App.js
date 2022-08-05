@@ -4,6 +4,7 @@ import './styles/style.css';
 import logo from './images/82.JPG';
 import ellipse from './images/ellipse.png';
 import { CSSTransition } from 'react-transition-group';
+import LANG from './lang';
 
 import Picture from './components/Picture';
 import Contacts from './components/Contacts';
@@ -14,6 +15,7 @@ import Project from './components/Projects';
 import Loader from './components/Loader/Loader';
 
 function App() {
+  console.log(LANG);
   const [inProp, setInProp] = useState(false);
   const lang = {
     en: {
@@ -35,7 +37,7 @@ function App() {
   const [dataJson, setData] = useState({experience: null});
   
   useEffect(() => {
-    setData({experience: null})
+    setData({experience: null});
 
     let request = new XMLHttpRequest();
     request.open('GET', langState.state.json, true);
@@ -85,12 +87,11 @@ function App() {
 
     request.send();
     setInProp(true);
-    setLangId(langState.state.class)
+    setLangId(langState.state.class);
  
-  }, [langState.state])
+  }, [langState.state]);
 
-   if (dataJson.experience !== null) 
-   return (
+   if (dataJson.experience !== null) return (
      
     <div className="app" id={langId}>
      <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 

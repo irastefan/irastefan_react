@@ -81,10 +81,10 @@ function App() {
               /> )}
           </div>
 
-        <h2>{LANG.title}</h2>
+        <h2>{LANG.skills.title[langId]}</h2>
         <Skills />
 
-        <h2>{LANG.title}</h2>
+        <h2>{LANG.projects.title[langId]}</h2>
         <div className='projects'>
             {LANG.projects.items.map((item, index) => 
               <Project 

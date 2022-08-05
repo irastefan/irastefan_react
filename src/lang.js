@@ -100,7 +100,10 @@ const LANG = {
       },
     },
     "skills": {
-            "title": "Skills",
+            "title": {
+                "en": "Skills",
+                "he": "כישורים"
+            },
             "items": [
               {
                   
@@ -109,8 +112,8 @@ const LANG = {
         },
     "projects": {
             "title": {
-                "eng": "Projects",
-                "heb": "פרוייקטים"
+                "en": "Projects",
+                "he": "פרוייקטים"
             },
             "items": [
                 {

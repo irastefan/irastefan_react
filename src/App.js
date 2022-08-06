@@ -3,7 +3,7 @@ import './styles/css/main.css';
 import './styles/style.css';
 import logo from './images/82.JPG';
 import ellipse from './images/ellipse.png';
-import { CSSTransition } from 'react-transition-group';
+import { CSSTransition, Transition } from 'react-transition-group';
 import LANG from './lang';
 
 import Picture from './components/Picture';
@@ -16,51 +16,59 @@ import Loader from './components/Loader/Loader';
 
 function App() {
   const [inProp, setInProp] = useState(false);
-
   const [langId, setLangId] = useState('en');
+
+  const [data, setData] = useState(LANG);
+  console.log(data);
 
   const [loader, setLoader] = useState(true);
   
-  useEffect(() => {
+  useEffect(() => {   
+    
     setTimeout(() => {
       setLoader(false);
     }, 2000);
+      
+    setInProp(true); 
   }, []);
 
   useEffect(() => {
     setInProp(true); 
   }, [langId]);
 
-  if (!loader) {
+
    return (    
     <div className="app" id={langId}>
-     <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
+            {
+        loader && <Loader />
+      }
+     <CSSTransition in={inProp} timeout={3000} classNames="my-node"> 
       <div className="sidebar">
-
         <Picture src={logo} />
 		    <h1>{LANG[langId].fullName}</h1>
         <Contacts 
-          phone={LANG.phone} 
-          email={LANG.email} 
-          github={LANG.github} 
-          linkedin={LANG.linkedin} 
+          phone={data.phone} 
+          email={data.email} 
+          github={data.github} 
+          linkedin={data.linkedin} 
         />
 
 	    </div>
      </CSSTransition>
-     <CSSTransition in={inProp} timeout={1000} classNames="my-node"> 
+     
+     <CSSTransition in={inProp} timeout={3000} classNames="my-node"> 
       <main>
       <button className="langbutton" onClick={() => {
           langId === 'en' ? setLangId('he') : setLangId('en');
           setInProp(false);
           
-        }} >{LANG[langId].textButton}</button>
+        }} >{data[langId].textButton}</button>
 
         <img src={ellipse} alt="Logo" className="ellipse" />
 
-        <h2>{LANG[langId].experience.title}</h2>
+        <h2>{data[langId].experience.title}</h2>
         <div>
-        {LANG[langId].experience.items.map((item, index) => 
+        {data[langId].experience.items.map((item, index) => 
           <WorkExperience 
             company={item.company}  
             years={item.years}
@@ -102,10 +110,6 @@ function App() {
     </div>
    
   );
-}
-  else return (
-    <Loader />
-  )
 }
 
 export default App;

@@ -1,8 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;600&family=Source+Serif+Pro:ital,wght@0,300;0,900;1,400&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;600&family=Source+Serif+Pro:ital,wght@0,300;0,900;1,400&display=swap');
+*/
+@font-face {
+    font-family: 'Assistant';
+    src:  
+      url(fonts/Assistant-Light.woff) format('woff');
+    font-display: auto;
+  }
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: 
+      url(fonts/SourceSerifPro-Black.woff) format('woff');
+    font-display: auto;
+ }
 :root {
     --circlecolor1: #78b0a0;
     --circlecolor2: #efdab9;
+    --circlecolor3: #008064;
+    --circlecolor4: #6194BC;
     --buttoncolor: 96, 183, 140;
 }
 
@@ -15,14 +29,14 @@
   }
   .my-node-enter-active {
     opacity: 1;
-    transition: opacity 400ms;
+    transition: opacity 1000ms;
   }
   .my-node-exit {
     opacity: 1;
   }
   .my-node-exit-active {
     opacity: 0;
-    transition: opacity 400ms;
+    transition: opacity 1000ms;
   }
 
 .langbutton {
@@ -37,10 +51,7 @@
     padding: 5px 15px;
     cursor: pointer;
     box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s;
-}
-.langbutton:hover {
-    transform: scale(0.9);
+    transition: 0.3s;
 }
 #he .langbutton {
     left: 20px;
@@ -73,8 +84,8 @@ h1, h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #584b4f;
-    color: #efeae1;
+    background-color: #78b0a0;
+    color: #343233;
 
     overflow-x: hidden;
     /*overflow-y: scroll;*/
@@ -112,12 +123,12 @@ body ::-webkit-scrollbar-track {
   position: absolute;
   box-sizing: border-box;
   width: 144.4px;
-  height: 144.4px;
+  height: 147.4px;
   top: 2.46rem;
   left: -0.3rem;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--circlecolor1) var(--circlecolor1) var(--circlecolor1) transparent;
+  border-color: #008064 #008064 #008064 transparent;
   border-radius: 50%;
   transition: all 1.5s ease-in-out;
 }
@@ -133,7 +144,7 @@ body ::-webkit-scrollbar-track {
 }
 .picture-resume .circle-2 {
   width: 155.8px;
-  height: 155.8px;
+  height: 157.8px;
   top: 2.1rem;
   left: -0.62rem;
   border-color: var(--circlecolor2) transparent var(--circlecolor2) var(--circlecolor2);
@@ -155,11 +166,11 @@ body ::-webkit-scrollbar-track {
     min-width: 133px;
     min-height: 133px;
     width: 130px;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.4s;
 }
 .picture-resume img:hover {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .picture-resume:hover {
@@ -177,7 +188,7 @@ body ::-webkit-scrollbar-track {
 
 .link-default{
     display: block;
-    color: #fff;
+    color: #343233;
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
@@ -188,7 +199,7 @@ body ::-webkit-scrollbar-track {
     height: 53px;
     width: 53px;    
     background: none;
-    border: 0px solid var(--circlecolor1);
+    border: 0px solid var(--circlecolor2);
     border-radius: 100%;
     display: inline-flex;
     flex-flow: column;
@@ -199,13 +210,13 @@ body ::-webkit-scrollbar-track {
     transition: 0.5s;
 }
 .link-default:hover span{
-    animation: button_pulse 1.5s infinite cubic-bezier(.25, 0, 0, 1);
-    background: var(--circlecolor1);
+    animation: button_pulse 1.5s infinite cubic-bezier(.9, 0, 0, 1);
+    background: var(--circlecolor2);
 }
 
 @-webkit-keyframes button_pulse {
     0% {
-        box-shadow: 0 0 0 0px rgba(var(--buttoncolor), 1);
+        box-shadow: 0 0 0 0px rgba(239, 218, 185, 1);
     }
     100% {
         box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
@@ -213,7 +224,7 @@ body ::-webkit-scrollbar-track {
 }
 @keyframes button_pulse {
     0% {
-        box-shadow: 0 0 0 0px rgba(var(--buttoncolor), 1);
+        box-shadow: 0 0 0 0px rgba(239, 218, 185, 1);
     }
     100% {
         box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
@@ -223,7 +234,7 @@ body ::-webkit-scrollbar-track {
 
 main {
     position: relative;    
-    background-color:  #343233;
+    background-color:  #2c2a2b;
     width: auto;
     min-height: 700px;
     padding: 0% 10%;
@@ -284,7 +295,7 @@ main > div > .item > div:last-child {
 main > div > .item .company {    
     font-weight: 300;
     font-size: 20px;
-    margin: 0 0 10px;    
+    margin: 0 0 1px;    
     color: #efeae1;
 }
 main > div > .item .years {    
@@ -292,7 +303,7 @@ main > div > .item .years {
     font-size: 22px;
     font-weight: 500;
     margin: 0;
-    color: #efeae1;
+    color: #ffd152;
 }
 main > div > .item > div:last-child h3 {
     color: #78b0a0;
@@ -459,6 +470,9 @@ main > h2 {
         width: 100%;
         height: max-content;
         padding: 20px;
+    }
+    .app .sidebar {
+        padding: 0 0 20px 0;
     }
     main > div > .item {
         flex-wrap: wrap;

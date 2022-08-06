@@ -13,7 +13,7 @@ const LANG = {
               "company": "Site Pro",
               "years": "2020-2022",
               "position": "Wordpress Developer",
-              "description": "Website development. WordPress plugin development. Web Services development (PHP, CSS, HTML, JavaScript, Jquery) (API Google)"
+              "description": "Website development.<br> WordPress plugin development.<br> Web Services development (PHP, CSS, HTML, JavaScript, Jquery) (API Google)"
             },
             {
               "company": "Global medic orthopedic clinic",

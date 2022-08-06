@@ -9,7 +9,7 @@ const WorkExperience = (props) => {
             </div>
             <div>
                 <h3>{props.position}</h3>
-                <p>{props.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: props.description}} />
             </div>
         </div>
     )

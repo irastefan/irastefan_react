@@ -8,7 +8,7 @@ const Education = (props) => {
             </div>
             <div>
             <h3>{props.company}</h3>
-            <h4>{props.position}</h4>
+            <h4 dangerouslySetInnerHTML={{ __html: props.position}} />
             </div>
         </div>
     )

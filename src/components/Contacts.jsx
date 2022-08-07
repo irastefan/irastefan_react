@@ -5,7 +5,7 @@ import { faGithub,faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contacts = (props) => {
     return (
-        <div className="contacts">
+        <div className="contacts" data-aos={props.dataAos}  data-aos-once='true'>
             <a href={`tel:${props.phone}`} className="link-default">
                 <span>
                     <FontAwesomeIcon icon={faMobileScreenButton} />

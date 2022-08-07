@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = (props) => {
     return (
-        <div className="item">
+        <div className="item" data-aos='zoom-in' data-aos-once='true'>
             <div>
             <div className="years">{props.years}</div>
             </div>

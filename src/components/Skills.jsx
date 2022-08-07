@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
     return (
-        <div className="floats">            
+        <div className="floats" data-aos='zoom-in' data-aos-once='true'>            
 			<div className="skill1 float">HTML</div>            
             <div className="skill2 float float3">
 				<div className="skill3 float float2">CSS</div>

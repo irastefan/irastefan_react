@@ -4,6 +4,10 @@ import './styles/style.css';
 import logo from './images/82.JPG';
 import ellipse from './images/ellipse.png';
 import { CSSTransition, Transition } from 'react-transition-group';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import LANG from './lang';
 
 import Picture from './components/Picture';
@@ -27,9 +31,15 @@ function App() {
     
     setTimeout(() => {
       setLoader(false);
+      
+    Aos.init({
+      duration: 1000,
+    });
     }, 2000);
       
     setInProp(true); 
+
+
   }, []);
 
   useEffect(() => {
@@ -44,9 +54,10 @@ function App() {
       }
      <CSSTransition in={inProp} timeout={3000} classNames="my-node"> 
       <div className="sidebar">
-        <Picture src={logo} />
-		    <h1>{LANG[langId].fullName}</h1>
+        <Picture src={logo}  dataAos='zoom-in' data-aos-once='true' />
+		    <h1 data-aos='zoom-in' data-aos-once='true'>{LANG[langId].fullName}</h1>
         <Contacts 
+          dataAos='zoom-in'
           phone={data.phone} 
           email={data.email} 
           github={data.github} 
@@ -62,11 +73,13 @@ function App() {
           langId === 'en' ? setLangId('he') : setLangId('en');
           setInProp(false);
           
-        }} >{data[langId].textButton}</button>
+        }} 
+        data-aos='zoom-in' data-aos-once='true'  
+      >{data[langId].textButton}</button>
 
         <img src={ellipse} alt="Logo" className="ellipse" />
 
-        <h2>{data[langId].experience.title}</h2>
+        <h2 data-aos='zoom-in' data-aos-once='true'>{data[langId].experience.title}</h2>
         <div>
         {data[langId].experience.items.map((item, index) => 
           <WorkExperience 
@@ -78,7 +91,7 @@ function App() {
           /> )}
           </div>
           
-          <h2>{LANG[langId].education.title}</h2>
+          <h2 data-aos='fade-up' data-aos-once='true'>{LANG[langId].education.title}</h2>
           <div>
             {LANG[langId].education.items.map((item, index) => 
               <Education 
@@ -89,10 +102,10 @@ function App() {
               /> )}
           </div>
 
-        <h2>{LANG.skills.title[langId]}</h2>
+        <h2 data-aos='fade-up' data-aos-once='true'>{LANG.skills.title[langId]}</h2>
         <Skills />
 
-        <h2>{LANG.projects.title[langId]}</h2>
+        <h2 data-aos='fade-up' data-aos-once='true'>{LANG.projects.title[langId]}</h2>
         <div className='projects'>
             {LANG.projects.items.map((item, index) => 
               <Project 

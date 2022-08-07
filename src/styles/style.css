@@ -467,12 +467,12 @@ main > h2 {
         height: max-content;
     }
     .app main, .app .sidebar {
-        width: 100%;
+        width: auto;
         height: max-content;
         padding: 20px;
     }
     .app .sidebar {
-        padding: 0 0 20px 0;
+        padding: 0 0 10px 0;
     }
     main > div > .item {
         flex-wrap: wrap;

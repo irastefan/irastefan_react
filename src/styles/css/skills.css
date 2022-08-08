@@ -40,15 +40,15 @@
 
 .skill6 {
   font-size: 15px;
-  top: 40px;
+  top: 16px;
   left: 550px;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 }
 
 .skill7 {
   font-size: 23px;
-  top: 10px;
+  top: 0px;
   left: 30px;
   width: auto;
   height: auto;
@@ -56,16 +56,32 @@
 
 .skill8 {
   font-size: 20px;
-  top: 90px;
+  top: 70px;
   left: 10px;
+  width: auto;
+  height: auto;
+}
+
+.skill8_1 {
+  font-size: 16px;
+  top: 70px;
+  left: 120px;
+  width: auto;
+  height: auto;
+}
+
+.skill8_2 {
+  font-size: 18px;
+  top: 135px;
+  left: 120px;
   width: auto;
   height: auto;
 }
 
 .skill9 {
   font-size: 15px;
-  top: 120px;
-  left: 90px;
+  top: 165px;
+  left: 40px;
   width: auto;
   height: auto;
 }
@@ -88,8 +104,8 @@
 
 .skill12 {
   font-size: 22px;
-  top: 150px;
-  left: 390px;
+  top: 180px;
+  left: 350px;
   width: auto;
   height: auto;
 }
@@ -112,8 +128,16 @@
 
 .skill15 {
   font-size: 15px;
-  top: 110px;
-  left: 20px;
+  top: 105px;
+  left: 8px;
+  width: auto;
+  height: auto;
+}
+
+.skill15_1 {
+  font-size: 15px;
+  top: 90px;
+  left: 190px;
   width: auto;
   height: auto;
 }
@@ -121,14 +145,14 @@
 .skill16 {
   font-size: 15px;
   top: 210px;
-  left: 80px;
+  left: 50px;
   width: auto;
   height: auto;
 }
 
 .skill17 {
   font-size: 15px;
-  top: 140px;
+  top: 190px;
   left: 190px;
   width: auto;
   height: auto;
@@ -213,16 +237,16 @@
 
 #he .skill6 {
   font-size: 15px;
-  top: 40px;
+  top: 16px;
   right: 550px;
   left: auto;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 }
 
 #he .skill7 {
   font-size: 23px;
-  top: 10px;
+  top: 0px;
   right: 30px;
   left: auto;
   width: auto;
@@ -231,8 +255,26 @@
 
 #he .skill8 {
   font-size: 20px;
-  top: 90px;
+  top: 70px;
   right: 10px;
+  left: auto;
+  width: auto;
+  height: auto;
+}
+
+#he .skill8_1 {
+  font-size: 16px;
+  top: 70px;
+  right: 120px;
+  left: auto;
+  width: auto;
+  height: auto;
+}
+
+#he .skill8_2 {
+  font-size: 18px;
+  top: 135px;
+  right: 120px;
   left: auto;
   width: auto;
   height: auto;
@@ -240,8 +282,8 @@
 
 #he .skill9 {
   font-size: 15px;
-  top: 120px;
-  right: 90px;
+  top: 165px;
+  right: 40px;
   left: auto;
   width: auto;
   height: auto;
@@ -277,7 +319,7 @@
 #he .skill13 {
   font-size: 15px;
   top: 10px;
-  right: -70px;
+  right: -50px;
   left: auto;
   width: 250px;
   height: 250px;
@@ -286,7 +328,7 @@
 #he .skill14 {
   font-size: 23px;
   top: 10px;
-  right: 50px;
+  right: 70px;
   left: auto;
   width: auto;
   height: auto;
@@ -294,8 +336,17 @@
 
 #he .skill15 {
   font-size: 15px;
-  top: 110px;
-  right: 20px;
+  top: 105px;
+  right: 8px;
+  left: auto;
+  width: auto;
+  height: auto;
+}
+
+#he .skill15_1 {
+  font-size: 15px;
+  top: 90px;
+  right: 190px;
   left: auto;
   width: auto;
   height: auto;
@@ -304,7 +355,7 @@
 #he .skill16 {
   font-size: 15px;
   top: 210px;
-  right: 80px;
+  right: 50px;
   left: auto;
   width: auto;
   height: auto;
@@ -312,8 +363,8 @@
 
 #he .skill17 {
   font-size: 15px;
-  top: 140px;
-  right: 190px;
+  top: 185px;
+  right: 180px;
   left: auto;
   width: auto;
   height: auto;

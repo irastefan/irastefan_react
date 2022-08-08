@@ -13,6 +13,10 @@
     width: $width;
     height: $height;
 }
+
+.skill0 {
+    @include skillStyle(-90px, 180px);
+}
 .skill1 {
     @include skillStyle(-90px, 450px, auto, auto, 22px);
 }
@@ -20,10 +24,10 @@
     @include skillStyle(330px, 190px, 150px, 140px);
 }
 .skill3 {
-    @include skillStyle(10px, 50px, auto, auto, 23px);
+    @include skillStyle(00px, 110px, auto, auto, 23px);
 }
 .skill4 {
-    @include skillStyle(90px, 10px, auto, auto, 16px);
+    @include skillStyle(70px, 140px, auto, auto, 16px);
 }
 .skill5 {
     @include skillStyle(100px, 90px);
@@ -41,16 +45,22 @@
     @include skillStyle(70px, 120px, auto, auto, 16px);
 }
 .skill8_2 {
-    @include skillStyle(135px, 120px, auto, auto, 18px);
+    @include skillStyle(145px, 120px, auto, auto, 18px);
 }
 .skill9 {
-    @include skillStyle(165px, 40px);
+    @include skillStyle(158px, 10px);
 }
 .skill10 {
-    @include skillStyle(0px, 310px, auto, auto, 22px);
+    @include skillStyle(30px, 330px, auto, auto, 22px);
 }
 .skill11 {
-    @include skillStyle(390px, 0px, auto, auto, 22px);
+    @include skillStyle(380px, 140px, auto, auto, 20px);
+}
+.skill11_1 {
+    @include skillStyle(490px, 20px, auto, auto, 20px);
+}
+.skill11_2 {
+    @include skillStyle(360px, -40px, auto, auto, 20px);
 }
 .skill12 {
     @include skillStyle(180px, 350px, auto, auto, 22px);
@@ -87,7 +97,7 @@
 }
 
 #he .skill1 {
-    @include skillStyleRtl(-90px, 450px, auto, auto, 22px);
+    @include skillStyleRtl(-90px, 200px, auto, auto, 22px);
 }
 #he .skill2 {
     @include skillStyleRtl(330px, 190px, 150px, 140px);
@@ -120,7 +130,7 @@
     @include skillStyleRtl(165px, 40px);
 }
 #he .skill10 {
-    @include skillStyleRtl(0px, 310px, auto, auto, 22px);
+    @include skillStyleRtl(30px, 310px, auto, auto, 22px);
 }
 #he .skill11 {
     @include skillStyleRtl(390px, 0px, auto, auto, 22px);
@@ -147,7 +157,7 @@
     @include skillStyleRtl(185px, 180px);
 }
 #he .skill18 {
-    @include skillStyleRtl(300px, 470px, 150px, 130px);
+    @include skillStyleRtl(300px, 390px, 150px, 130px);
 }
 #he .skill19 {
     @include skillStyleRtl(10px, 30px, auto, auto, 23px);

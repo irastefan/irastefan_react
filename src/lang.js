@@ -10,6 +10,12 @@ const LANG = {
             "title": "Work Experience",
             "items": [
             {
+                "company": "NPCoding",
+                "years": "2022",
+                "position": "Full stack Developer",
+                "description": "Corporate websites and eCommerce websites development.<br> Mobile App Development (React Native)",
+            },
+            {
               "company": "Site Pro",
               "years": "2020-2022",
               "position": "Wordpress Developer",
@@ -42,11 +48,6 @@ const LANG = {
               "company": "Belarusian State University of Informatics and  Radioelectronics",
               "years": "2010-2014",
               "position": "Software engineer"
-            },
-            {
-              "company": "Social and Humanitarian College",
-              "years": "2006-2010",
-              "position": "Technician programmer"
             }
           ]
       },
@@ -58,6 +59,11 @@ const LANG = {
             "title": "ניסיון תעסוקתי",
             "items": [
             {
+                "company": "NPCoding",
+                "years": "2022",
+                "position": "Full stack Developer",
+                "description": "בניית אתרי איקומרס ואתרי תדמית. <br> פיתוח אפליקציות מובייל (React Native)",
+            },{
               "company": "Site Pro",
               "years": "2020-2022",
               "position": "מפתח אתרי וורדפרס",
@@ -90,11 +96,6 @@ const LANG = {
               "company": "באוניברסיטה הממלכתית לאינפורמטיקה ורדיואלקטרוניקה - מינסק",
               "years": "2010-2014",
               "position": "תואר ראשון במערכות מידע"
-            },
-            {
-              "company": "לימודים במגמת מחשבים בקולג' הסוציאלי ,באוניברסיטת מוגילב",
-              "years": "2006-2010",
-              "position": ""
             }
           ]
       },
@@ -116,7 +117,19 @@ const LANG = {
                 "he": "פרוייקטים"
             },
             "items": [
-                {
+              {
+                "name": "NPCoding.com",
+                "link": "https://npcoding.com/",
+                "img": "https://irastefan.com/projects-img/npcoding.jpg",
+                "tags": ["Wordpress", "Woocommerce", "PHP", "JavaScript"]
+              },
+              {
+                "name": "Socalytix.io",
+                "link": "https://socalytix.io/",
+                "img": "https://irastefan.com/projects-img/socalytix.jpg",
+                "tags": ["Wordpress", "Woocommerce", "PHP", "JavaScript"]
+              },  
+              {
                     "name": "Moga.co.il",
                     "link": "https://moga.co.il/",
                     "img": "https://irastefan.com/projects-img/moga.jpg",

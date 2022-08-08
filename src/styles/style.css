@@ -303,7 +303,7 @@ main > div > .item .years {
     font-size: 22px;
     font-weight: 500;
     margin: 0;
-    color: #ffd152;
+    color: #efdab9;
 }
 main > div > .item > div:last-child h3 {
     color: #78b0a0;
@@ -342,6 +342,9 @@ main > h2 {
     z-index: 1;
     background: rgba(120, 176, 160, 0.8);
     cursor: pointer;
+}
+.float0, .float0:hover {    
+    background: rgba(255, 209, 82, 0) !important;
 }
 .float1 {    
     background: rgba(255, 209, 82, 0.3);

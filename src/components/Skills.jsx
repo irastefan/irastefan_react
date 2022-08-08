@@ -2,8 +2,7 @@ import React from "react";
 
 const Skills = () => {
     return (
-        <div className="floats" data-aos='zoom-in' data-aos-once='true'>  
-			<div className="skill0 float float1">Professional in Googling</div>          
+        <div className="floats" data-aos='zoom-in' data-aos-once='true'>           
 			<div className="skill1 float">HTML</div>            
             <div className="skill2 float float0">
 				<div className="skill3 float float2">CSS</div>
@@ -32,7 +31,8 @@ const Skills = () => {
 				<div className="skill19 float float2">SEO</div>
 				<div className="skill20 float float1">SEMRush</div>
 				<div className="skill21 float float3">Ahrefs</div>
-			</div>             
+			</div>    
+			<div className="skill0 float float1">Professional in Googling</div>          
 		</div>
     )
 }

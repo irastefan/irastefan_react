@@ -475,7 +475,7 @@ main > h2 {
         padding: 20px;
     }
     .app .sidebar {
-        padding: 0 0 10px 0;
+        padding: 0 0 25px 0;
     }
     main > div > .item {
         flex-wrap: wrap;
@@ -497,6 +497,10 @@ main > h2 {
     }
     .float .float {
         width: auto !important;
+    }
+    
+    .float0, .float0:hover {    
+        background: rgba(255, 209, 82, 0.3) !important;
     }
 
     main > div > .item > div:first-child, main > div > .item > div:last-child {
